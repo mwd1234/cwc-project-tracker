@@ -14,6 +14,8 @@
 		9F5F28CF2B882FF8009C1321 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F28CE2B882FF8009C1321 /* Project.swift */; };
 		9F5F28D12B883080009C1321 /* ProjectUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F28D02B883080009C1321 /* ProjectUpdate.swift */; };
 		9F5F29162B8EA7FE009C1321 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F29152B8EA7FE009C1321 /* FontHelper.swift */; };
+		9F5F29192B8EB083009C1321 /* StatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F29182B8EB083009C1321 /* StatBubbleView.swift */; };
+		9F5F291B2B8EB1C1009C1321 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F291A2B8EB1C1009C1321 /* ProjectCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9F5F28CE2B882FF8009C1321 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		9F5F28D02B883080009C1321 /* ProjectUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUpdate.swift; sourceTree = "<group>"; };
 		9F5F29152B8EA7FE009C1321 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		9F5F29182B8EB083009C1321 /* StatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBubbleView.swift; sourceTree = "<group>"; };
+		9F5F291A2B8EB1C1009C1321 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,8 @@
 		9F5F28BE2B882AD8009C1321 /* cwc-project-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				9F5F29172B8EB063009C1321 /* Project List */,
 				9F5F28BF2B882AD8009C1321 /* DBProjectTracker.swift */,
-				9F5F28C12B882AD8009C1321 /* ProjectListView.swift */,
 				9F5F29142B8EA74A009C1321 /* Helpers */,
 				9F5F28CD2B882E42009C1321 /* Models */,
 				9F5F28C32B882AD9009C1321 /* Assets.xcassets */,
@@ -90,6 +94,16 @@
 				9F5F29152B8EA7FE009C1321 /* FontHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F5F29172B8EB063009C1321 /* Project List */ = {
+			isa = PBXGroup;
+			children = (
+				9F5F28C12B882AD8009C1321 /* ProjectListView.swift */,
+				9F5F29182B8EB083009C1321 /* StatBubbleView.swift */,
+				9F5F291A2B8EB1C1009C1321 /* ProjectCardView.swift */,
+			);
+			path = "Project List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,8 @@
 				9F5F29162B8EA7FE009C1321 /* FontHelper.swift in Sources */,
 				9F5F28C22B882AD8009C1321 /* ProjectListView.swift in Sources */,
 				9F5F28C02B882AD8009C1321 /* DBProjectTracker.swift in Sources */,
+				9F5F29192B8EB083009C1321 /* StatBubbleView.swift in Sources */,
+				9F5F291B2B8EB1C1009C1321 /* ProjectCardView.swift in Sources */,
 				9F5F28CF2B882FF8009C1321 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
