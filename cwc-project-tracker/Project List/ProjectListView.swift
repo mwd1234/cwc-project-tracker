@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ProjectListView: View {
+    @State private var newProject: Project?
+    @Query private var projects: [Project]
+
     var body: some View {
         ZStack {
+            
             LinearGradient(colors: [Color("Deep Purple"), Color("Blush Pink")], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
@@ -19,14 +24,18 @@ struct ProjectListView: View {
                     .foregroundColor(Color.white)
                 ScrollView (showsIndicators: false) {
                     VStack (spacing: 26) {
-                        ProjectCardView()
-                        ProjectCardView()
-                        ProjectCardView()
+                        
+                        
+                        ForEach(projects) { p in
+                            ProjectCardView(project: p)
+                        }
+                        
+                        
                     }
                 }
                 
                 Button (action: {
-                    
+                    self.newProject = Project() 
                 }, label: {
                     ZStack {
                         Circle()
@@ -38,7 +47,10 @@ struct ProjectListView: View {
             }
             .padding()
         }
-
+        .sheet(item: $newProject) { project in
+            AddProjectView(project: project)
+                .presentationDetents([.fraction(0.2)])
+        }
     }
 }
 
