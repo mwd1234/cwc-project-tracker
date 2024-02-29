@@ -17,6 +17,7 @@
 		9F5F29192B8EB083009C1321 /* StatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F29182B8EB083009C1321 /* StatBubbleView.swift */; };
 		9F5F291B2B8EB1C1009C1321 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F291A2B8EB1C1009C1321 /* ProjectCardView.swift */; };
 		9F5F291D2B8FD633009C1321 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F291C2B8FD633009C1321 /* AddProjectView.swift */; };
+		9F5F294A2B90095A009C1321 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F29492B90095A009C1321 /* ProjectDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9F5F29182B8EB083009C1321 /* StatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBubbleView.swift; sourceTree = "<group>"; };
 		9F5F291A2B8EB1C1009C1321 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 		9F5F291C2B8FD633009C1321 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
+		9F5F29492B90095A009C1321 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,9 @@
 		9F5F28BE2B882AD8009C1321 /* cwc-project-tracker */ = {
 			isa = PBXGroup;
 			children = (
-				9F5F29172B8EB063009C1321 /* Project List */,
 				9F5F28BF2B882AD8009C1321 /* DBProjectTracker.swift */,
+				9F5F29172B8EB063009C1321 /* Project List */,
+				9F5F29482B900924009C1321 /* Project Detail */,
 				9F5F29142B8EA74A009C1321 /* Helpers */,
 				9F5F28CD2B882E42009C1321 /* Models */,
 				9F5F28C32B882AD9009C1321 /* Assets.xcassets */,
@@ -107,6 +110,14 @@
 				9F5F291A2B8EB1C1009C1321 /* ProjectCardView.swift */,
 			);
 			path = "Project List";
+			sourceTree = "<group>";
+		};
+		9F5F29482B900924009C1321 /* Project Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9F5F29492B90095A009C1321 /* ProjectDetailView.swift */,
+			);
+			path = "Project Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			files = (
 				9F5F28D12B883080009C1321 /* ProjectUpdate.swift in Sources */,
 				9F5F29162B8EA7FE009C1321 /* FontHelper.swift in Sources */,
+				9F5F294A2B90095A009C1321 /* ProjectDetailView.swift in Sources */,
 				9F5F28C22B882AD8009C1321 /* ProjectListView.swift in Sources */,
 				9F5F291D2B8FD633009C1321 /* AddProjectView.swift in Sources */,
 				9F5F28C02B882AD8009C1321 /* DBProjectTracker.swift in Sources */,
